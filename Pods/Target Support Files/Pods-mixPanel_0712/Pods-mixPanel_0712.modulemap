@@ -1,0 +1,6 @@
+framework module Pods_mixPanel_0712 {
+  umbrella header "Pods-mixPanel_0712-umbrella.h"
+
+  export *
+  module * { export * }
+}

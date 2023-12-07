@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B27BC0363190191B2173015 /* Pods_mixPanel_0712.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639C10EC5F7ADD79A7FE21E7 /* Pods_mixPanel_0712.framework */; };
 		1FE61E682B21A9B8003A4D05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE61E672B21A9B8003A4D05 /* AppDelegate.swift */; };
 		1FE61E6A2B21A9B8003A4D05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE61E692B21A9B8003A4D05 /* SceneDelegate.swift */; };
 		1FE61E6C2B21A9B8003A4D05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE61E6B2B21A9B8003A4D05 /* ViewController.swift */; };
@@ -24,6 +25,9 @@
 		1FE61E702B21A9BA003A4D05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FE61E732B21A9BA003A4D05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FE61E752B21A9BA003A4D05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		639C10EC5F7ADD79A7FE21E7 /* Pods_mixPanel_0712.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mixPanel_0712.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BDCFFEC03C5FDABD7CCC8AA /* Pods-mixPanel_0712.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mixPanel_0712.release.xcconfig"; path = "Target Support Files/Pods-mixPanel_0712/Pods-mixPanel_0712.release.xcconfig"; sourceTree = "<group>"; };
+		ADB39A322E70582CFEE25941 /* Pods-mixPanel_0712.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mixPanel_0712.debug.xcconfig"; path = "Target Support Files/Pods-mixPanel_0712/Pods-mixPanel_0712.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B27BC0363190191B2173015 /* Pods_mixPanel_0712.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				1FE61E662B21A9B8003A4D05 /* mixPanel_0712 */,
 				1FE61E652B21A9B8003A4D05 /* Products */,
+				2DFAD7B7D7E12B1BFA6DDDFB /* Pods */,
+				AC789EDF739C02065410F4AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = mixPanel_0712;
 			sourceTree = "<group>";
 		};
+		2DFAD7B7D7E12B1BFA6DDDFB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ADB39A322E70582CFEE25941 /* Pods-mixPanel_0712.debug.xcconfig */,
+				6BDCFFEC03C5FDABD7CCC8AA /* Pods-mixPanel_0712.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AC789EDF739C02065410F4AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				639C10EC5F7ADD79A7FE21E7 /* Pods_mixPanel_0712.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FE61E782B21A9BA003A4D05 /* Build configuration list for PBXNativeTarget "mixPanel_0712" */;
 			buildPhases = (
+				48405DA084DAF0274CE1CDC1 /* [CP] Check Pods Manifest.lock */,
 				1FE61E602B21A9B8003A4D05 /* Sources */,
 				1FE61E612B21A9B8003A4D05 /* Frameworks */,
 				1FE61E622B21A9B8003A4D05 /* Resources */,
+				5A15947F9AEF0100FC6E319C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48405DA084DAF0274CE1CDC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mixPanel_0712-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A15947F9AEF0100FC6E319C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mixPanel_0712/Pods-mixPanel_0712-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mixPanel_0712/Pods-mixPanel_0712-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mixPanel_0712/Pods-mixPanel_0712-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1FE61E602B21A9B8003A4D05 /* Sources */ = {
@@ -284,6 +352,7 @@
 		};
 		1FE61E792B21A9BA003A4D05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADB39A322E70582CFEE25941 /* Pods-mixPanel_0712.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -291,9 +360,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = mixPanel_0712/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MixPanel;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -311,6 +381,7 @@
 		};
 		1FE61E7A2B21A9BA003A4D05 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BDCFFEC03C5FDABD7CCC8AA /* Pods-mixPanel_0712.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -318,9 +389,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = mixPanel_0712/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MixPanel;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

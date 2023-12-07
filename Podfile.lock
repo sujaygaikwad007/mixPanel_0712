@@ -1,0 +1,16 @@
+PODS:
+  - Mixpanel (5.0.2)
+
+DEPENDENCIES:
+  - Mixpanel
+
+SPEC REPOS:
+  trunk:
+    - Mixpanel
+
+SPEC CHECKSUMS:
+  Mixpanel: 62e5fb088d56a7ba1369aeb335d0bff7ebae061e
+
+PODFILE CHECKSUM: 6e751a625be26f93e1036b89846d48ef6c03633e
+
+COCOAPODS: 1.14.3
