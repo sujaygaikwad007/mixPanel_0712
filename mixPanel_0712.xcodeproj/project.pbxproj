@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1B27BC0363190191B2173015 /* Pods_mixPanel_0712.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639C10EC5F7ADD79A7FE21E7 /* Pods_mixPanel_0712.framework */; };
+		1F27342B2B21DF440057B569 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F27342A2B21DF440057B569 /* SignUp.swift */; };
 		1FE61E682B21A9B8003A4D05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE61E672B21A9B8003A4D05 /* AppDelegate.swift */; };
 		1FE61E6A2B21A9B8003A4D05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE61E692B21A9B8003A4D05 /* SceneDelegate.swift */; };
 		1FE61E6C2B21A9B8003A4D05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE61E6B2B21A9B8003A4D05 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F27342A2B21DF440057B569 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		1FE61E642B21A9B8003A4D05 /* mixPanel_0712.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mixPanel_0712.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE61E672B21A9B8003A4D05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FE61E692B21A9B8003A4D05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				1FE61E692B21A9B8003A4D05 /* SceneDelegate.swift */,
 				1FE61E6B2B21A9B8003A4D05 /* ViewController.swift */,
 				1FE61E6D2B21A9B8003A4D05 /* Main.storyboard */,
+				1F27342A2B21DF440057B569 /* SignUp.swift */,
 				1FE61E702B21A9BA003A4D05 /* Assets.xcassets */,
 				1FE61E722B21A9BA003A4D05 /* LaunchScreen.storyboard */,
 				1FE61E752B21A9BA003A4D05 /* Info.plist */,
@@ -102,7 +105,7 @@
 				1FE61E602B21A9B8003A4D05 /* Sources */,
 				1FE61E612B21A9B8003A4D05 /* Frameworks */,
 				1FE61E622B21A9B8003A4D05 /* Resources */,
-				5A15947F9AEF0100FC6E319C /* [CP] Embed Pods Frameworks */,
+				D8A1EAC882E1F881D7A52AE5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -182,7 +185,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5A15947F9AEF0100FC6E319C /* [CP] Embed Pods Frameworks */ = {
+		D8A1EAC882E1F881D7A52AE5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FE61E6C2B21A9B8003A4D05 /* ViewController.swift in Sources */,
+				1F27342B2B21DF440057B569 /* SignUp.swift in Sources */,
 				1FE61E682B21A9B8003A4D05 /* AppDelegate.swift in Sources */,
 				1FE61E6A2B21A9B8003A4D05 /* SceneDelegate.swift in Sources */,
 			);

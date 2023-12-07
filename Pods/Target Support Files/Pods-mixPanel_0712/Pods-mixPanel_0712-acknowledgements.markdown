@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## Mixpanel
+## Mixpanel-swift
 
 Copyright 2022 Mixpanel, Inc.
 

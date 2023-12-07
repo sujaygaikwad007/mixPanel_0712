@@ -11,9 +11,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        Mixpanel.initialize(token:"672266804ab0f4abdff67a0a46a8de89")
-        Thread.sleep(forTimeInterval: 2)
-        
+        Mixpanel.initialize(token: "672266804ab0f4abdff67a0a46a8de89", trackAutomaticEvents: true)
+//        Mixpanel.mainInstance().track(event: "Signed On Swift", properties: [
+//               "Signup Type": "Referral",
+//           ])
         return true
     }
 
